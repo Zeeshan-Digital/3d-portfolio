@@ -5,31 +5,31 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
+    title: "Graphic Design",
+    category: "Posters, Logos, Banners & More",
+    tools: "Adobe Photoshop, Illustrator, Canva",
+    image: "/images/graphic-design.png",
+    link: "https://drive.google.com/drive/folders/1ssiG5q7J_a6Y7U5ShJB0Alc6D7WLrEEF?usp=sharing",
+  },
+  {
+    title: "Content Writing",
+    category: "Full Portfolio",
+    tools: "Copywriting, Blog Writing, Social Content",
+    image: "/images/content-writing.png",
+    link: "https://drive.google.com/drive/folders/1aLPYznZw2znjNaeMZLE-yd85SCxpzSSS?usp=sharing",
+  },
+  {
+    title: "Presentation Design",
+    category: "Full Portfolio",
+    tools: "PowerPoint, Canva, Pitch Decks",
+    image: "/images/presentation.png",
+    link: "https://drive.google.com/drive/folders/14UwV0QhwUIUC1XZjBYP6_wBRr1VWuUas?usp=sharing",
+  },
+  {
     title: "Babar Enterprises",
     category: "Company Profile Design",
     tools: "Graphic Design, Branding, Adobe Photoshop/Illustrator",
     image: "/images/babar.png",
-    link: "#",
-  },
-  {
-    title: "SZABIST ZabTech",
-    category: "Social Media Post Designs (Course Project)",
-    tools: "Social Media Design, Content Creation, Canva/Photoshop",
-    image: "/images/szabist.png",
-    link: "#",
-  },
-  {
-    title: "Riuman International",
-    category: "SIM Selling Poster",
-    tools: "Poster Design, Marketing Creative, Adobe Photoshop",
-    image: "/images/riuman.png",
-    link: "#",
-  },
-  {
-    title: "Logo Design",
-    category: "Business & Personal Brands",
-    tools: "Logo Design, Branding, Adobe Illustrator",
-    image: "/images/logos.png",
     link: "#",
   },
 ];
@@ -68,7 +68,6 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
-          {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
@@ -86,7 +85,6 @@ const Work = () => {
             <MdArrowForward />
           </button>
 
-          {/* Slides */}
           <div className="carousel-track-container">
             <div
               className="carousel-track"
@@ -125,7 +123,6 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Dot Indicators */}
           <div className="carousel-dots">
             {projects.map((_, index) => (
               <button
